@@ -1,0 +1,63 @@
+{
+  "explorer.confirmDragAndDrop": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "vscode-pets.position": "explorer",
+  "debug.disassemblyView.showSourceCode": false,
+  "git.autofetch": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "liveServer.settings.donotVerifyTags": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
+  "eslint.rules.customizations": [],
+  "eslint.codeActionsOnSave.rules": null,
+  "java.debug.settings.console": "internalConsole",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.linkedEditing": true,
+  "conventionalCommits.lineBreak": "\\n",
+  "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "Dracula",
+  "eslint.lintTask.enable": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "codemetrics.nodeconfiguration.ReturnStatement": 0.1,
+  "codemetrics.nodeconfiguration.SwitchStatement": 0.1,
+  "codemetrics.nodeconfiguration.JsxSelfClosingElement": 0.1,
+  "codemetrics.nodeconfiguration.JsxElement": 0.2,
+  "codemetrics.basics.CodeLensHiddenUnder": 4,
+  "workbench.editor.empty.hint": "hidden",
+  "terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "cloudcode.project": "just-tec-poc",
+  "cloudcode.autoDependencies": "off",
+  "gitlens.ai.experimental.provider": "openai",
+  "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
+  "explorer.confirmPasteNative": false,
+  "workbench.activityBar.location": "top",
+  "editor.largeFileOptimizations": false,
+  "window.zoomLevel": 1,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#10192c",
+    "editor.background": "#10192c",
+    "sideBar.background": "#10192c",
+    "statusBar.background": "#10192c",
+    "titleBar.activeBackground": "#10192c",
+    "titleBar.inactiveBackground": "#10192c",
+    "menu.background": "#10192c",
+    "tab.activeBackground": "#10192c", // Esta linha adiciona o background das abas ativas
+    "tab.inactiveBackground": "#10192c", // Esta
+    "tab.hoverBackground": "#5f4e4e",
+    "editorGroupHeader.tabsBackground": "#10192c",
+    "breadcrumb.background": "#10192c"
+  }
+}
