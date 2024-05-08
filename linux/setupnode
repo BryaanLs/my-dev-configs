@@ -10,7 +10,7 @@ npm install nodemon
 jq '.scripts.start = "nodemon index.js" | .type = "module"' package.json > tmp.json && mv tmp.json package.json
 
 touch index.js
-echo "console.log('Let's go code!')" > index.js
+echo "console.log("Let's go code!")" > index.js
 code .
 clear
 npm start
