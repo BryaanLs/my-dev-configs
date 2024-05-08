@@ -1,4 +1,5 @@
-echo "Digite o nome da pasta alvo:"
+echo "for the first run, you need install jq --> sudo apt install jq -y"
+echo "Write work folder name:"
 read folder
 
 mkdir $folder
@@ -9,7 +10,7 @@ npm install nodemon
 jq '.scripts.start = "nodemon index.js" | .type = "module"' package.json > tmp.json && mv tmp.json package.json
 
 touch index.js
-echo "console.log('bora codar')" > index.js
+echo "console.log('Let's go code!')" > index.js
 code .
 clear
 npm start
