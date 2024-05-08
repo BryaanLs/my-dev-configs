@@ -1,0 +1,16 @@
+echo "Digite o nome da pasta alvo:"
+read folder
+
+mkdir $folder
+cd $folder
+npm init -y
+npm install nodemon
+
+jq '.scripts.start = "nodemon index.js" | .type = "module"' package.json > tmp.json && mv tmp.json package.json
+
+touch index.js
+echo "console.log('bora codar')" > index.js
+code .
+clear
+npm start
+        
