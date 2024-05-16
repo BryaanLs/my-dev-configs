@@ -14,4 +14,3 @@ echo "console.log('Ready to code?')" > index.js
 code .
 clear
 npm start
-        
