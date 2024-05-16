@@ -1,0 +1,19 @@
+echo "Digite o nome da pasta de destino"
+read folder
+mkdir $folder
+cd $folder
+mkdir src
+cd src/
+mkdir api config jobs loaders utils helpers routes
+cd api
+mkdir controllers models services subscribers repositories
+cd ../..
+touch app.js
+touch server.js
+touch .env
+touch .env.example
+npm init -y
+npm install express
+npm install nodemon -D
+jq '.scripts.start = "nodemon server.js" | .type = "module"' package.json > tmp.json && mv tmp.json package.json
+code .
