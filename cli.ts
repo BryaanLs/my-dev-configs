@@ -5,7 +5,13 @@ import packages from "./src/tools/packages"
 import { $ } from 'bun';
 
 async function installPackages(selectedPackages: {name: string, command: string}[]) {
-    const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
+
+    const progressBar = new cliProgress.SingleBar({ 
+        format: "{collectionName} | {bar} | {percentage}% | {duration_formatted} | {value}/{total}",
+        barCompleteChar: "※",
+        barIncompleteChar: "⁍"}
+    );
+
     progressBar.start(selectedPackages.length, 0);
 
     selectedPackages.forEach(async({name, command}, i)=>{
@@ -41,15 +47,3 @@ if (interactive) {
 } else {
     await installPackages(packages);
 }
-
-
-// const outputDir = join(__dirname, 'dist');
-// const outputFile = join(outputDir, 'cli');
-
-// execSync(`mkdir -p ${outputDir}`);
-// execSync(`bun build /home/padawan/my-dev-configs/cli.ts --outdir ${outputDir} --outfile cli --minify`);
-
-// writeFileSync(outputFile, `#!/usr/bin/env bun\n${readFileSync(outputFile, 'utf8')}`);
-// execSync(`chmod +x ${outputFile}`);
-
-// console.log(`CLI built successfully. You can run it with: ${outputFile}`);
